@@ -37,16 +37,6 @@
     <tag>HEAD</tag>
     <url>https://github.com/mdh-se/${project.artifactId}</url>
   </scm>
-  <distributionManagement>
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-    </repository>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
 
   <properties>
     <!-- MDH-specific properties -->
@@ -168,6 +158,7 @@
     <!-- This version is tied to spring-boot -->
     <mdh.validation-api.version>2.0.1.Final</mdh.validation-api.version>
     <mdh.versions-maven-plugin.version>2.5</mdh.versions-maven-plugin.version>
+    <mdu.central-publishing-maven-plugin.version>0.10.0</mdu.central-publishing-maven-plugin.version>
 
     <!-- Standard Maven properties -->
     <maven.compiler.release>${mdh.java.version}</maven.compiler.release>
@@ -956,6 +947,11 @@
           </configuration>
         </plugin>
         <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>${mdu.central-publishing-maven-plugin.version}</version>
+        </plugin>
+        <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
           <version>${mdh.spring-boot.version}</version>
@@ -1056,6 +1052,14 @@
             <version>${mdh.extra-enforcer-rules.version}</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+        </configuration>
       </plugin>
     </plugins>
   </build>
