@@ -1,1 +1,1 @@
-# mdh-parent
+# mdu-oss-parent
