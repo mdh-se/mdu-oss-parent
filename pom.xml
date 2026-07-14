@@ -158,6 +158,7 @@
     <mdh.validation-api.version>2.0.1.Final</mdh.validation-api.version>
     <mdh.versions-maven-plugin.version>2.21.0</mdh.versions-maven-plugin.version>
     <mdu.central-publishing-maven-plugin.version>0.10.0</mdu.central-publishing-maven-plugin.version>
+    <mdu.jaxb-maven-plugin.version>4.0.8</mdu.jaxb-maven-plugin.version>
     <mdu.mdu-build-resources.version>34</mdu.mdu-build-resources.version>
 
     <!-- Standard Maven properties -->
@@ -942,6 +943,41 @@
           <version>${mdh.jacoco-maven-plugin.version}</version>
           <configuration>
             <outputEncoding>UTF-8</outputEncoding>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.jvnet.jaxb</groupId>
+          <artifactId>jaxb-maven-plugin</artifactId>
+          <version>${mdu.jaxb-maven-plugin.version}</version>
+          <configuration>
+            <args>
+              <!-- Insert toString() method -->
+              <arg>-Xcommons-lang</arg>
+              <arg>-Xcommons-lang:ToStringStyle=SHORT_PREFIX_STYLE</arg>
+              <!-- Generate JSR-303 Bean Validation Annotations -->
+              <arg>-XJsr303Annotations</arg>
+              <arg>-XJsr303Annotations:validationAnnotations=jakarta</arg>
+            </args>
+            <bindingDirectory>src/main/xjb</bindingDirectory>
+            <bindingIncludes>
+              <include>bindings.xml</include>
+            </bindingIncludes>
+            <extension>true</extension>
+            <noFileHeader>true</noFileHeader>
+            <plugins>
+              <!-- Generate JSR-303 Bean Validation Annotations -->
+              <plugin>
+                <groupId>com.fillumina</groupId>
+                <artifactId>krasa-jaxb-tools</artifactId>
+                <version>2.2</version>
+              </plugin>
+              <!-- Insert toString() method -->
+              <plugin>
+                <groupId>org.jvnet.jaxb</groupId>
+                <artifactId>jaxb-plugins</artifactId>
+                <version>${mdu.jaxb-maven-plugin.version}</version>
+              </plugin>
+            </plugins>
           </configuration>
         </plugin>
         <plugin>
