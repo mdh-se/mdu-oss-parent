@@ -43,7 +43,7 @@
     <!-- This version is tied to javax.mail -->
     <mdh.activation.version>1.1</mdh.activation.version>
     <mdh.annotation-api.version>1.3.2</mdh.annotation-api.version>
-    <mdh.appassembler-maven-plugin.version>1.9</mdh.appassembler-maven-plugin.version>
+    <mdh.appassembler-maven-plugin.version>2.1.0</mdh.appassembler-maven-plugin.version>
     <!-- This version is tied to cxf -->
     <mdh.brave.version>5.17.1</mdh.brave.version>
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
@@ -60,7 +60,7 @@
     <mdh.hamcrest.version>2.1</mdh.hamcrest.version>
     <!-- This version is tied to spring-boot -->
     <mdh.jackson.version>2.13.5</mdh.jackson.version>
-    <mdh.jacoco-maven-plugin.version>0.8.3</mdh.jacoco-maven-plugin.version>
+    <mdh.jacoco-maven-plugin.version>0.8.14</mdh.jacoco-maven-plugin.version>
     <!-- This version is tied to spring-boot and jakarta.xml.bind-api -->
     <mdh.jakarta.activation-api.version>1.2.2</mdh.jakarta.activation-api.version>
     <!-- This version is tied to spring-boot -->
@@ -84,7 +84,7 @@
     <mdh.jakarta.xml.bind-api.version>2.3.3</mdh.jakarta.xml.bind-api.version>
     <!-- This version is tied to spring-boot -->
     <mdh.jakarta.xml.ws-api.version>2.3.3</mdh.jakarta.xml.ws-api.version>
-    <mdh.java.version>11</mdh.java.version>
+    <mdh.java.version>17</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
     <mdh.jaxb-impl.version>2.3.9</mdh.jaxb-impl.version>
     <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
@@ -105,9 +105,9 @@
     <mdh.maven.version>3.0</mdh.maven.version>
     <mdh.maven-antrun-plugin.version>1.8</mdh.maven-antrun-plugin.version>
     <mdh.maven-assembly-plugin.version>3.1.0</mdh.maven-assembly-plugin.version>
-    <mdh.maven-bundle-plugin.version>2.3.7</mdh.maven-bundle-plugin.version>
+    <mdh.maven-bundle-plugin.version>5.1.9</mdh.maven-bundle-plugin.version>
     <mdh.maven-changes-plugin.templateEncoding>UTF-8</mdh.maven-changes-plugin.templateEncoding>
-    <mdh.maven-changes-plugin.version>2.12.1</mdh.maven-changes-plugin.version>
+    <mdh.maven-changes-plugin.version>3.0.0-M3</mdh.maven-changes-plugin.version>
     <mdh.maven-checkstyle-plugin.version>3.1.2</mdh.maven-checkstyle-plugin.version>
     <mdh.maven-clean-plugin.version>3.1.0</mdh.maven-clean-plugin.version>
     <mdh.maven-compiler-plugin.version>3.14.0</mdh.maven-compiler-plugin.version>
@@ -119,7 +119,7 @@
     <mdh.maven-gpg-plugin.version>1.6</mdh.maven-gpg-plugin.version>
     <mdh.maven-install-plugin.version>2.5.2</mdh.maven-install-plugin.version>
     <mdh.maven-jar-plugin.version>3.2.0</mdh.maven-jar-plugin.version>
-    <mdh.maven-javadoc-plugin.version>3.2.0</mdh.maven-javadoc-plugin.version>
+    <mdh.maven-javadoc-plugin.version>3.12.0</mdh.maven-javadoc-plugin.version>
     <mdh.maven-jxr-plugin.version>3.1.1</mdh.maven-jxr-plugin.version>
     <mdh.maven-pdf-plugin.version>1.4</mdh.maven-pdf-plugin.version>
     <mdh.maven-plugin-plugin.version>3.5.2</mdh.maven-plugin-plugin.version>
@@ -132,7 +132,7 @@
     <mdh.maven-scm-provider-jgit.version>1.9.5</mdh.maven-scm-provider-jgit.version>
     <mdh.maven-site-plugin.version>3.7.1</mdh.maven-site-plugin.version>
     <mdh.maven-source-plugin.version>3.2.1</mdh.maven-source-plugin.version>
-    <mdh.maven-surefire-plugin.version>2.22.2</mdh.maven-surefire-plugin.version>
+    <mdh.maven-surefire-plugin.version>3.5.5</mdh.maven-surefire-plugin.version>
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.4.0</mdh.maven-war-plugin.version>
@@ -145,7 +145,7 @@
     <!-- This version is tied to brave, cxf and spring-boot-->
     <mdh.slf4j.version>1.7.36</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
-    <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
+    <mdh.spotbugs-maven-plugin.version>4.9.8.2</mdh.spotbugs-maven-plugin.version>
     <mdh.spring.version>5.3.21</mdh.spring.version>
     <mdh.spring-boot.version>2.7.0</mdh.spring-boot.version>
     <mdh.spring-cloud.version>3.1.3</mdh.spring-cloud.version>
@@ -156,14 +156,12 @@
     <mdh.tidy-maven-plugin.version>1.1.0</mdh.tidy-maven-plugin.version>
     <!-- This version is tied to spring-boot -->
     <mdh.validation-api.version>2.0.1.Final</mdh.validation-api.version>
-    <mdh.versions-maven-plugin.version>2.5</mdh.versions-maven-plugin.version>
+    <mdh.versions-maven-plugin.version>2.21.0</mdh.versions-maven-plugin.version>
     <mdu.central-publishing-maven-plugin.version>0.10.0</mdu.central-publishing-maven-plugin.version>
     <mdu.mdu-build-resources.version>34</mdu.mdu-build-resources.version>
 
     <!-- Standard Maven properties -->
     <maven.compiler.release>${mdh.java.version}</maven.compiler.release>
-    <maven.compiler.source>${mdh.java.version}</maven.compiler.source>
-    <maven.compiler.target>${mdh.java.version}</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.scm.id>github</project.scm.id>
