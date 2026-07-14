@@ -1,1 +1,1 @@
-buildJava()
+buildJava(jdk: 'OpenJDK 17')
