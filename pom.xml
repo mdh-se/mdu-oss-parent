@@ -107,7 +107,7 @@
     <mdh.maven-assembly-plugin.version>3.1.0</mdh.maven-assembly-plugin.version>
     <mdh.maven-bundle-plugin.version>5.1.9</mdh.maven-bundle-plugin.version>
     <mdh.maven-changes-plugin.templateEncoding>UTF-8</mdh.maven-changes-plugin.templateEncoding>
-    <mdh.maven-changes-plugin.version>3.0.0-M3</mdh.maven-changes-plugin.version>
+    <mdh.maven-changes-plugin.version>2.12.1</mdh.maven-changes-plugin.version>
     <mdh.maven-checkstyle-plugin.version>3.1.2</mdh.maven-checkstyle-plugin.version>
     <mdh.maven-clean-plugin.version>3.1.0</mdh.maven-clean-plugin.version>
     <mdh.maven-compiler-plugin.version>3.14.0</mdh.maven-compiler-plugin.version>
