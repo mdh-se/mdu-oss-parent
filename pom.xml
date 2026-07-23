@@ -61,8 +61,6 @@
     <!-- This version is tied to spring-boot -->
     <mdh.jackson.version>2.13.5</mdh.jackson.version>
     <mdh.jacoco-maven-plugin.version>0.8.14</mdh.jacoco-maven-plugin.version>
-    <!-- This version is tied to spring-boot and jakarta.xml.bind-api -->
-    <mdh.jakarta.activation-api.version>1.2.2</mdh.jakarta.activation-api.version>
     <!-- This version is tied to spring-boot -->
     <mdh.jakarta.annotation-api.version>1.3.5</mdh.jakarta.annotation-api.version>
     <!-- This version is tied to spring-boot -->
@@ -76,17 +74,12 @@
     <mdh.jakarta.servlet.jsp-api.version>2.3.6</mdh.jakarta.servlet.jsp-api.version>
     <!-- This version is tied to spring-boot -->
     <mdh.jakarta.servlet.jsp.jstl-api.version>1.2.7</mdh.jakarta.servlet.jsp.jstl-api.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jakarta.validation-api.version>2.0.2</mdh.jakarta.validation-api.version>
     <!-- This version is tied to cxf and spring-boot -->
     <mdh.jakarta.ws.rs-api.version>2.1.6</mdh.jakarta.ws.rs-api.version>
-    <!-- This version is tied to cxf and jakarta.xml.ws-api -->
-    <mdh.jakarta.xml.bind-api.version>2.3.3</mdh.jakarta.xml.bind-api.version>
     <!-- This version is tied to spring-boot -->
     <mdh.jakarta.xml.ws-api.version>2.3.3</mdh.jakarta.xml.ws-api.version>
     <mdh.java.version>17</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
-    <mdh.jaxb-impl.version>2.3.9</mdh.jaxb-impl.version>
     <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
     <mdh.jaxws-impl.version>2.3.7</mdh.jaxws-impl.version>
     <mdh.jms-api.version>2.0.1</mdh.jms-api.version>
@@ -243,11 +236,6 @@
         <version>${mdh.brave.version}</version>
       </dependency>
       <dependency>
-        <groupId>jakarta.activation</groupId>
-        <artifactId>jakarta.activation-api</artifactId>
-        <version>${mdh.jakarta.activation-api.version}</version>
-      </dependency>
-      <dependency>
         <groupId>jakarta.annotation</groupId>
         <artifactId>jakarta.annotation-api</artifactId>
         <version>${mdh.jakarta.annotation-api.version}</version>
@@ -283,19 +271,9 @@
         <version>${mdh.jakarta.servlet.jsp.jstl-api.version}</version>
       </dependency>
       <dependency>
-        <groupId>jakarta.validation</groupId>
-        <artifactId>jakarta.validation-api</artifactId>
-        <version>${mdh.jakarta.validation-api.version}</version>
-      </dependency>
-      <dependency>
         <groupId>jakarta.ws.rs</groupId>
         <artifactId>jakarta.ws.rs-api</artifactId>
         <version>${mdh.jakarta.ws.rs-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.xml.bind</groupId>
-        <artifactId>jakarta.xml.bind-api</artifactId>
-        <version>${mdh.jakarta.xml.bind-api.version}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.xml.ws</groupId>
@@ -438,12 +416,6 @@
         <artifactId>log4j-slf4j-impl</artifactId>
         <version>${mdh.log4j2.version}</version>
         <scope>runtime</scope>
-      </dependency>
-      <!-- Implementation javax.xml.bind -->
-      <dependency>
-        <groupId>org.glassfish.jaxb</groupId>
-        <artifactId>jaxb-runtime</artifactId>
-        <version>${mdh.jaxb-impl.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
