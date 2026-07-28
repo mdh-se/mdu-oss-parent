@@ -49,9 +49,9 @@
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
     <mdh.checkstyle.version>8.31</mdh.checkstyle.version>
     <!-- This version is tied to commons-text -->
-    <mdh.commons-lang3.version>3.12.0</mdh.commons-lang3.version>
+    <mdh.commons-lang3.version>3.20.0</mdh.commons-lang3.version>
     <mdh.commons-logging.version>1.2</mdh.commons-logging.version>
-    <mdh.commons-text.version>1.10.0</mdh.commons-text.version>
+    <mdh.commons-text.version>1.15.0</mdh.commons-text.version>
     <mdh.cxf.version>3.6.5</mdh.cxf.version>
     <mdh.cxf-xjc.version>3.3.4</mdh.cxf-xjc.version>
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
