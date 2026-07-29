@@ -40,58 +40,59 @@
 
   <properties>
     <!-- Plugins och deras dependencies -->
-    <mdh.appassembler-maven-plugin.version>2.1.0</mdh.appassembler-maven-plugin.version>
-    <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
+    <mdu.appassembler-maven-plugin.version>2.1.0</mdu.appassembler-maven-plugin.version>
+    <mdu.build-helper-maven-plugin.version>3.0.0</mdu.build-helper-maven-plugin.version>
     <mdu.central-publishing-maven-plugin.version>0.10.0</mdu.central-publishing-maven-plugin.version>
-    <mdh.checkstyle.version>8.31</mdh.checkstyle.version>
+    <mdu.checkstyle.version>8.31</mdu.checkstyle.version>
     <mdu.cxf-codegen-plugin.version>3.6.5</mdu.cxf-codegen-plugin.version>
     <mdu.cxf-xjc-plugin.version>3.3.4</mdu.cxf-xjc-plugin.version>
     <mdu.cxf.xjcplugins.version>3.3.4</mdu.cxf.xjcplugins.version>
-    <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
-    <mdh.extra-enforcer-rules.version>1.7.0</mdh.extra-enforcer-rules.version>
-    <mdh.jacoco-maven-plugin.version>0.8.14</mdh.jacoco-maven-plugin.version>
-    <mdh.java.version>17</mdh.java.version>
+    <mdu.exec-maven-plugin.version>1.4.0</mdu.exec-maven-plugin.version>
+    <mdu.extra-enforcer-rules.version>1.7.0</mdu.extra-enforcer-rules.version>
+    <mdu.jacoco-maven-plugin.version>0.8.14</mdu.jacoco-maven-plugin.version>
+    <mdu.java.version>17</mdu.java.version>
     <mdu.jaxb-maven-plugin.version>4.0.8</mdu.jaxb-maven-plugin.version>
-    <mdh.maven.version>3.0</mdh.maven.version>
-    <mdh.maven-antrun-plugin.version>1.8</mdh.maven-antrun-plugin.version>
-    <mdh.maven-assembly-plugin.version>3.1.0</mdh.maven-assembly-plugin.version>
-    <mdh.maven-bundle-plugin.version>5.1.9</mdh.maven-bundle-plugin.version>
-    <mdh.maven-changes-plugin.templateEncoding>UTF-8</mdh.maven-changes-plugin.templateEncoding>
-    <mdh.maven-changes-plugin.version>2.12.1</mdh.maven-changes-plugin.version>
-    <mdh.maven-checkstyle-plugin.version>3.1.2</mdh.maven-checkstyle-plugin.version>
-    <mdh.maven-clean-plugin.version>3.1.0</mdh.maven-clean-plugin.version>
-    <mdh.maven-compiler-plugin.version>3.14.0</mdh.maven-compiler-plugin.version>
-    <mdh.maven-dependency-plugin.version>3.6.1</mdh.maven-dependency-plugin.version>
-    <mdh.maven-deploy-plugin.version>2.8.2</mdh.maven-deploy-plugin.version>
-    <mdh.maven-ear-plugin.version>2.10.1</mdh.maven-ear-plugin.version>
-    <mdh.maven-ejb-plugin.version>3.0.0</mdh.maven-ejb-plugin.version>
-    <mdh.maven-enforcer-plugin.version>3.4.1</mdh.maven-enforcer-plugin.version>
-    <mdh.maven-gpg-plugin.version>1.6</mdh.maven-gpg-plugin.version>
-    <mdh.maven-install-plugin.version>2.5.2</mdh.maven-install-plugin.version>
-    <mdh.maven-jar-plugin.version>3.2.0</mdh.maven-jar-plugin.version>
-    <mdh.maven-javadoc-plugin.version>3.12.0</mdh.maven-javadoc-plugin.version>
-    <mdh.maven-jxr-plugin.version>3.1.1</mdh.maven-jxr-plugin.version>
-    <mdh.maven-pdf-plugin.version>1.4</mdh.maven-pdf-plugin.version>
-    <mdh.maven-plugin-plugin.version>3.5.2</mdh.maven-plugin-plugin.version>
+    <mdu.maven.version>3.0</mdu.maven.version>
+    <mdu.maven-antrun-plugin.version>1.8</mdu.maven-antrun-plugin.version>
+    <mdu.maven-assembly-plugin.version>3.1.0</mdu.maven-assembly-plugin.version>
+    <mdu.maven-bundle-plugin.version>5.1.9</mdu.maven-bundle-plugin.version>
+    <mdu.maven-changes-plugin.templateEncoding>UTF-8</mdu.maven-changes-plugin.templateEncoding>
+    <mdu.maven-changes-plugin.version>2.12.1</mdu.maven-changes-plugin.version>
+    <mdu.maven-checkstyle-plugin.version>3.1.2</mdu.maven-checkstyle-plugin.version>
+    <mdu.maven-clean-plugin.version>3.1.0</mdu.maven-clean-plugin.version>
+    <mdu.maven-compiler-plugin.version>3.14.0</mdu.maven-compiler-plugin.version>
+    <mdu.maven-dependency-plugin.version>3.6.1</mdu.maven-dependency-plugin.version>
+    <mdu.maven-deploy-plugin.version>2.8.2</mdu.maven-deploy-plugin.version>
+    <mdu.maven-ear-plugin.version>2.10.1</mdu.maven-ear-plugin.version>
+    <mdu.maven-ejb-plugin.version>3.0.0</mdu.maven-ejb-plugin.version>
+    <mdu.maven-enforcer-plugin.version>3.4.1</mdu.maven-enforcer-plugin.version>
+    <mdu.maven-gpg-plugin.version>1.6</mdu.maven-gpg-plugin.version>
+    <mdu.maven-install-plugin.version>2.5.2</mdu.maven-install-plugin.version>
+    <mdu.maven-jar-plugin.version>3.2.0</mdu.maven-jar-plugin.version>
+    <mdu.maven-javadoc-plugin.version>3.12.0</mdu.maven-javadoc-plugin.version>
+    <mdu.maven-jxr-plugin.version>3.1.1</mdu.maven-jxr-plugin.version>
+    <mdu.maven-pdf-plugin.version>1.4</mdu.maven-pdf-plugin.version>
+    <mdu.maven-plugin-plugin.version>3.5.2</mdu.maven-plugin-plugin.version>
     <!-- Do NOT update this to a newer version until maven-site-plugin is also updated to 3.20.0 -->
-    <mdh.maven-pmd-plugin.version>3.24.0</mdh.maven-pmd-plugin.version>
-    <mdh.maven-project-info-reports-plugin.version>3.0.0</mdh.maven-project-info-reports-plugin.version>
-    <mdh.maven-release-plugin.version>2.5.3</mdh.maven-release-plugin.version>
-    <msh.maven-remote-resources-plugin.version>1.5</msh.maven-remote-resources-plugin.version>
-    <mdh.maven-resources-plugin.version>3.2.0</mdh.maven-resources-plugin.version>
-    <mdh.maven-scm-provider-jgit.version>1.9.5</mdh.maven-scm-provider-jgit.version>
-    <mdh.maven-site-plugin.version>3.7.1</mdh.maven-site-plugin.version>
-    <mdh.maven-source-plugin.version>3.2.1</mdh.maven-source-plugin.version>
-    <mdh.maven-surefire-plugin.version>3.5.5</mdh.maven-surefire-plugin.version>
-    <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
-    <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
-    <mdh.maven-war-plugin.version>3.4.0</mdh.maven-war-plugin.version>
+    <mdu.maven-pmd-plugin.version>3.24.0</mdu.maven-pmd-plugin.version>
+    <mdu.maven-project-info-reports-plugin.version>3.0.0</mdu.maven-project-info-reports-plugin.version>
+    <mdu.maven-release-plugin.version>2.5.3</mdu.maven-release-plugin.version>
+    <mdu.maven-remote-resources-plugin.version>1.5</mdu.maven-remote-resources-plugin.version>
+    <mdu.maven-resources-plugin.version>3.2.0</mdu.maven-resources-plugin.version>
+    <mdu.maven-scm-provider-jgit.version>1.9.5</mdu.maven-scm-provider-jgit.version>
+    <mdu.maven-site-plugin.version>3.7.1</mdu.maven-site-plugin.version>
+    <mdu.maven-source-plugin.version>3.2.1</mdu.maven-source-plugin.version>
+    <mdu.maven-surefire-plugin.version>3.5.5</mdu.maven-surefire-plugin.version>
+    <mdu.maven-toolchains-plugin.version>1.1</mdu.maven-toolchains-plugin.version>
+    <mdu.maven-wagon.version>3.1.0</mdu.maven-wagon.version>
+    <mdu.maven-war-plugin.version>3.4.0</mdu.maven-war-plugin.version>
     <mdu.mdu-build-resources.version>34</mdu.mdu-build-resources.version>
-    <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
-    <mdh.spotbugs-maven-plugin.version>4.9.8.2</mdh.spotbugs-maven-plugin.version>
-    <mdh.sql-maven-plugin.version>1.5</mdh.sql-maven-plugin.version>
-    <mdh.tidy-maven-plugin.version>1.1.0</mdh.tidy-maven-plugin.version>
-    <mdh.versions-maven-plugin.version>2.21.0</mdh.versions-maven-plugin.version>
+    <mdu.sortpom-maven-plugin.version>2.10.0</mdu.sortpom-maven-plugin.version>
+    <mdu.spotbugs-maven-plugin.version>4.9.8.2</mdu.spotbugs-maven-plugin.version>
+    <mdu.spring-boot-maven-plugin.version>2.7.0</mdu.spring-boot-maven-plugin.version>
+    <mdu.sql-maven-plugin.version>1.5</mdu.sql-maven-plugin.version>
+    <mdu.tidy-maven-plugin.version>1.1.0</mdu.tidy-maven-plugin.version>
+    <mdu.versions-maven-plugin.version>2.21.0</mdu.versions-maven-plugin.version>
 
     <!-- MDU-specific properties -->
     <mdh.logging.email.buffer>10</mdh.logging.email.buffer>
@@ -101,7 +102,7 @@
     <mdh.logging.product.level>debug</mdh.logging.product.level>
 
     <!-- Standard Maven properties -->
-    <maven.compiler.release>${mdh.java.version}</maven.compiler.release>
+    <maven.compiler.release>${mdu.java.version}</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.scm.id>github</project.scm.id>
@@ -125,7 +126,7 @@
         <plugin>
           <groupId>com.github.ekryd.sortpom</groupId>
           <artifactId>sortpom-maven-plugin</artifactId>
-          <version>${mdh.sortpom-maven-plugin.version}</version>
+          <version>${mdu.sortpom-maven-plugin.version}</version>
           <configuration>
             <predefinedSortOrder>default_1_0_0</predefinedSortOrder>
             <keepBlankLines>true</keepBlankLines>
@@ -136,7 +137,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>${mdh.spotbugs-maven-plugin.version}</version>
+          <version>${mdu.spotbugs-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.cxf</groupId>
@@ -214,18 +215,18 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>${mdh.maven-bundle-plugin.version}</version>
+          <version>${mdu.maven-bundle-plugin.version}</version>
           <extensions>true</extensions>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>${mdh.maven-antrun-plugin.version}</version>
+          <version>${mdu.maven-antrun-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>${mdh.maven-assembly-plugin.version}</version>
+          <version>${mdu.maven-assembly-plugin.version}</version>
           <dependencies>
             <dependency>
               <groupId>se.mdu</groupId>
@@ -240,7 +241,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-changes-plugin</artifactId>
-          <version>${mdh.maven-changes-plugin.version}</version>
+          <version>${mdu.maven-changes-plugin.version}</version>
           <dependencies>
             <dependency>
               <groupId>se.mdu</groupId>
@@ -251,22 +252,22 @@
           <configuration>
             <!-- Inheriting POMs need to specify mailSender, smtpHost and toAddresses -->
             <failOnError>true</failOnError>
-            <mailContentType>text/plain; charset=${mdh.maven-changes-plugin.templateEncoding}</mailContentType>
+            <mailContentType>text/plain; charset=${mdu.maven-changes-plugin.templateEncoding}</mailContentType>
             <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
             <subject>${project.artifactId}-${project.version} byggd av ${user.name}</subject>
             <templateDirectory>se/mdh/plugins/announcement</templateDirectory>
-            <templateEncoding>${mdh.maven-changes-plugin.templateEncoding}</templateEncoding>
+            <templateEncoding>${mdu.maven-changes-plugin.templateEncoding}</templateEncoding>
           </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>${mdh.maven-checkstyle-plugin.version}</version>
+          <version>${mdu.maven-checkstyle-plugin.version}</version>
           <dependencies>
             <dependency>
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
-              <version>${mdh.checkstyle.version}</version>
+              <version>${mdu.checkstyle.version}</version>
             </dependency>
             <dependency>
               <groupId>se.mdu</groupId>
@@ -282,12 +283,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>${mdh.maven-clean-plugin.version}</version>
+          <version>${mdu.maven-clean-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>${mdh.maven-compiler-plugin.version}</version>
+          <version>${mdu.maven-compiler-plugin.version}</version>
           <configuration>
             <compilerArgument>-Xlint:all,-serial,-dep-ann</compilerArgument>
             <showDeprecation>true</showDeprecation>
@@ -296,7 +297,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>${mdh.maven-dependency-plugin.version}</version>
+          <version>${mdu.maven-dependency-plugin.version}</version>
           <configuration>
             <ignoreNonCompile>true</ignoreNonCompile>
           </configuration>
@@ -304,7 +305,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>${mdh.maven-deploy-plugin.version}</version>
+          <version>${mdu.maven-deploy-plugin.version}</version>
           <configuration>
             <retryFailedDeploymentCount>5</retryFailedDeploymentCount>
           </configuration>
@@ -312,12 +313,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-ear-plugin</artifactId>
-          <version>${mdh.maven-ear-plugin.version}</version>
+          <version>${mdu.maven-ear-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-ejb-plugin</artifactId>
-          <version>${mdh.maven-ejb-plugin.version}</version>
+          <version>${mdu.maven-ejb-plugin.version}</version>
           <configuration>
             <archive>
               <manifest>
@@ -340,24 +341,24 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>${mdh.maven-enforcer-plugin.version}</version>
+          <version>${mdu.maven-enforcer-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>${mdh.maven-surefire-plugin.version}</version>
+          <version>${mdu.maven-surefire-plugin.version}</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.maven.surefire</groupId>
               <artifactId>surefire-junit47</artifactId>
-              <version>${mdh.maven-surefire-plugin.version}</version>
+              <version>${mdu.maven-surefire-plugin.version}</version>
             </dependency>
           </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>${mdh.maven-gpg-plugin.version}</version>
+          <version>${mdu.maven-gpg-plugin.version}</version>
           <configuration>
             <!-- Required for GPG 2 -->
             <gpgArguments>
@@ -369,12 +370,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-install-plugin</artifactId>
-          <version>${mdh.maven-install-plugin.version}</version>
+          <version>${mdu.maven-install-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>${mdh.maven-jar-plugin.version}</version>
+          <version>${mdu.maven-jar-plugin.version}</version>
           <configuration>
             <archive>
               <manifest>
@@ -387,7 +388,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>${mdh.maven-javadoc-plugin.version}</version>
+          <version>${mdu.maven-javadoc-plugin.version}</version>
           <configuration>
             <tags>
               <tag>
@@ -401,7 +402,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jxr-plugin</artifactId>
-          <version>${mdh.maven-jxr-plugin.version}</version>
+          <version>${mdu.maven-jxr-plugin.version}</version>
           <configuration>
             <linkJavadoc>false</linkJavadoc>
           </configuration>
@@ -409,17 +410,17 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pdf-plugin</artifactId>
-          <version>${mdh.maven-pdf-plugin.version}</version>
+          <version>${mdu.maven-pdf-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
-          <version>${mdh.maven-plugin-plugin.version}</version>
+          <version>${mdu.maven-plugin-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>${mdh.maven-pmd-plugin.version}</version>
+          <version>${mdu.maven-pmd-plugin.version}</version>
           <configuration>
             <rulesets>
               <ruleset>rulesets/maven.xml</ruleset>
@@ -430,12 +431,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>${mdh.maven-release-plugin.version}</version>
+          <version>${mdu.maven-release-plugin.version}</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.maven.scm</groupId>
               <artifactId>maven-scm-provider-jgit</artifactId>
-              <version>${mdh.maven-scm-provider-jgit.version}</version>
+              <version>${mdu.maven-scm-provider-jgit.version}</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -452,12 +453,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
-          <version>${msh.maven-remote-resources-plugin.version}</version>
+          <version>${mdu.maven-remote-resources-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>${mdh.maven-resources-plugin.version}</version>
+          <version>${mdu.maven-resources-plugin.version}</version>
           <configuration>
             <escapeString>\</escapeString>
             <nonFilteredFileExtensions>
@@ -471,13 +472,13 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>${mdh.maven-site-plugin.version}</version>
+          <version>${mdu.maven-site-plugin.version}</version>
           <dependencies>
             <!-- Add support for ssh/scp, required by Maven 3 -->
             <dependency>
               <groupId>org.apache.maven.wagon</groupId>
               <artifactId>wagon-ssh</artifactId>
-              <version>${mdh.maven-wagon.version}</version>
+              <version>${mdu.maven-wagon.version}</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -487,28 +488,28 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>${mdh.maven-source-plugin.version}</version>
+          <version>${mdu.maven-source-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>${mdh.maven-surefire-plugin.version}</version>
+          <version>${mdu.maven-surefire-plugin.version}</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.maven.surefire</groupId>
               <artifactId>surefire-junit47</artifactId>
-              <version>${mdh.maven-surefire-plugin.version}</version>
+              <version>${mdu.maven-surefire-plugin.version}</version>
             </dependency>
           </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-toolchains-plugin</artifactId>
-          <version>${mdh.maven-toolchains-plugin.version}</version>
+          <version>${mdu.maven-toolchains-plugin.version}</version>
           <configuration>
             <toolchains>
               <jdk>
-                <version>${mdh.java.version}</version>
+                <version>${mdu.java.version}</version>
               </jdk>
             </toolchains>
           </configuration>
@@ -516,7 +517,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
-          <version>${mdh.maven-war-plugin.version}</version>
+          <version>${mdu.maven-war-plugin.version}</version>
           <configuration>
             <archive>
               <manifest>
@@ -543,7 +544,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>appassembler-maven-plugin</artifactId>
-          <version>${mdh.appassembler-maven-plugin.version}</version>
+          <version>${mdu.appassembler-maven-plugin.version}</version>
           <configuration>
             <configurationDirectory>conf</configurationDirectory>
             <configurationSourceDirectory>src/main/config</configurationSourceDirectory>
@@ -559,32 +560,32 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
-          <version>${mdh.build-helper-maven-plugin.version}</version>
+          <version>${mdu.build-helper-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
-          <version>${mdh.exec-maven-plugin.version}</version>
+          <version>${mdu.exec-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>sql-maven-plugin</artifactId>
-          <version>${mdh.sql-maven-plugin.version}</version>
+          <version>${mdu.sql-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>tidy-maven-plugin</artifactId>
-          <version>${mdh.tidy-maven-plugin.version}</version>
+          <version>${mdu.tidy-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
-          <version>${mdh.versions-maven-plugin.version}</version>
+          <version>${mdu.versions-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>${mdh.jacoco-maven-plugin.version}</version>
+          <version>${mdu.jacoco-maven-plugin.version}</version>
           <configuration>
             <outputEncoding>UTF-8</outputEncoding>
           </configuration>
@@ -636,7 +637,7 @@
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
-          <version>${mdh.spring-boot.version}</version>
+          <version>${mdu.spring-boot-maven-plugin.version}</version>
           <configuration>
             <embeddedLaunchScriptProperties>
               <logFolder>$HOME/logs/${project.artifactId}</logFolder>
@@ -699,7 +700,7 @@
                   <version>${maven.compiler.release}</version>
                 </requireJavaVersion>
                 <requireMavenVersion>
-                  <version>${mdh.maven.version}</version>
+                  <version>${mdu.maven.version}</version>
                 </requireMavenVersion>
               </rules>
             </configuration>
@@ -731,7 +732,7 @@
           <dependency>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>extra-enforcer-rules</artifactId>
-            <version>${mdh.extra-enforcer-rules.version}</version>
+            <version>${mdu.extra-enforcer-rules.version}</version>
           </dependency>
         </dependencies>
       </plugin>
@@ -748,7 +749,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>${mdh.maven-project-info-reports-plugin.version}</version>
+        <version>${mdu.maven-project-info-reports-plugin.version}</version>
         <reportSets>
           <reportSet>
             <reports>
