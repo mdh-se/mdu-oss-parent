@@ -52,6 +52,7 @@
     <mdu.jacoco-maven-plugin.version>0.8.14</mdu.jacoco-maven-plugin.version>
     <mdu.java.version>17</mdu.java.version>
     <mdu.jaxb-maven-plugin.version>4.0.8</mdu.jaxb-maven-plugin.version>
+    <mdu.krasa-jaxb-tools.version>2.2</mdu.krasa-jaxb-tools.version>
     <mdu.maven.version>3.0</mdu.maven.version>
     <mdu.maven-antrun-plugin.version>1.8</mdu.maven-antrun-plugin.version>
     <mdu.maven-assembly-plugin.version>3.1.0</mdu.maven-assembly-plugin.version>
@@ -148,7 +149,7 @@
             <dependency>
               <groupId>com.fillumina</groupId>
               <artifactId>krasa-jaxb-tools</artifactId>
-              <version>2.2</version>
+              <version>${mdu.krasa-jaxb-tools.version}</version>
             </dependency>
             <!-- Lägg till toString() metoder -->
             <dependency>
@@ -184,7 +185,7 @@
             <dependency>
               <groupId>com.fillumina</groupId>
               <artifactId>krasa-jaxb-tools</artifactId>
-              <version>2.2</version>
+              <version>${mdu.krasa-jaxb-tools.version}</version>
             </dependency>
             <!-- Lägg till toString() metoder -->
             <dependency>
@@ -614,7 +615,7 @@
               <plugin>
                 <groupId>com.fillumina</groupId>
                 <artifactId>krasa-jaxb-tools</artifactId>
-                <version>2.2</version>
+                <version>${mdu.krasa-jaxb-tools.version}</version>
               </plugin>
               <!-- Insert toString() method -->
               <plugin>
