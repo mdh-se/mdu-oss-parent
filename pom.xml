@@ -4,11 +4,11 @@
 
   <groupId>se.mdu</groupId>
   <artifactId>mdu-oss-parent</artifactId>
-  <version>69-SNAPSHOT</version>
+  <version>70-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
-  <description>En maven-parent för MDU-produkter skrivna i Java.</description>
+  <description>En Maven-parent för MDU-produkter skrivna i Java.</description>
   <url>https://github.com/mdh-se/${project.artifactId}</url>
   <organization>
     <name>Mälardalens universitet</name>
@@ -39,62 +39,19 @@
   </scm>
 
   <properties>
-    <!-- MDU-specific properties -->
-    <!-- This version is tied to javax.mail -->
-    <mdh.activation.version>1.1</mdh.activation.version>
-    <mdh.annotation-api.version>1.3.2</mdh.annotation-api.version>
+    <!-- Plugins och deras dependencies -->
     <mdh.appassembler-maven-plugin.version>2.1.0</mdh.appassembler-maven-plugin.version>
-    <!-- This version is tied to cxf -->
-    <mdh.brave.version>5.17.1</mdh.brave.version>
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
+    <mdu.central-publishing-maven-plugin.version>0.10.0</mdu.central-publishing-maven-plugin.version>
     <mdh.checkstyle.version>8.31</mdh.checkstyle.version>
-    <!-- This version is tied to commons-text -->
-    <mdh.commons-lang3.version>3.20.0</mdh.commons-lang3.version>
-    <mdh.commons-logging.version>1.2</mdh.commons-logging.version>
-    <mdh.commons-text.version>1.15.0</mdh.commons-text.version>
-    <mdh.cxf.version>3.6.5</mdh.cxf.version>
-    <mdh.cxf-xjc.version>3.3.4</mdh.cxf-xjc.version>
+    <mdu.cxf-codegen-plugin.version>3.6.5</mdu.cxf-codegen-plugin.version>
+    <mdu.cxf-xjc-plugin.version>3.3.4</mdu.cxf-xjc-plugin.version>
+    <mdu.cxf.xjcplugins.version>3.3.4</mdu.cxf.xjcplugins.version>
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
     <mdh.extra-enforcer-rules.version>1.7.0</mdh.extra-enforcer-rules.version>
-    <!-- This version is tied to spring-boot-test -->
-    <mdh.hamcrest.version>2.1</mdh.hamcrest.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jackson.version>2.13.5</mdh.jackson.version>
     <mdh.jacoco-maven-plugin.version>0.8.14</mdh.jacoco-maven-plugin.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jakarta.annotation-api.version>1.3.5</mdh.jakarta.annotation-api.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jakarta.jms-api.version>2.0.3</mdh.jakarta.jms-api.version>
-    <!-- This version is tied to jakarta.xml.ws-api -->
-    <mdh.jakarta.jws-api.version>2.1.0</mdh.jakarta.jws-api.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jakarta.persistence-api.version>2.2.3</mdh.jakarta.persistence-api.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jakarta.servlet-api.version>4.0.4</mdh.jakarta.servlet-api.version>
-    <mdh.jakarta.servlet.jsp-api.version>2.3.6</mdh.jakarta.servlet.jsp-api.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jakarta.servlet.jsp.jstl-api.version>1.2.7</mdh.jakarta.servlet.jsp.jstl-api.version>
-    <!-- This version is tied to cxf and spring-boot -->
-    <mdh.jakarta.ws.rs-api.version>2.1.6</mdh.jakarta.ws.rs-api.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.jakarta.xml.ws-api.version>2.3.3</mdh.jakarta.xml.ws-api.version>
     <mdh.java.version>17</mdh.java.version>
-    <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
-    <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
-    <mdh.jaxws-impl.version>2.3.7</mdh.jaxws-impl.version>
-    <mdh.jms-api.version>2.0.1</mdh.jms-api.version>
-    <mdh.jsp-api.version>2.1</mdh.jsp-api.version>
-    <mdh.jstl-api.version>1.2.1</mdh.jstl-api.version>
-    <mdh.junit.version>4.13.2</mdh.junit.version>
-    <mdh.jws-api.version>1.0-MR1</mdh.jws-api.version>
-    <mdh.log4j2.version>2.22.0</mdh.log4j2.version>
-    <mdh.logging.email.buffer>10</mdh.logging.email.buffer>
-    <mdh.logging.email.level>off</mdh.logging.email.level>
-    <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
-    <mdh.logging.file.level>debug</mdh.logging.file.level>
-    <mdh.logging.product.level>debug</mdh.logging.product.level>
-    <mdh.mail.version>1.4.7</mdh.mail.version>
-    <mdh.mail-api.version>1.6.2</mdh.mail-api.version>
+    <mdu.jaxb-maven-plugin.version>4.0.8</mdu.jaxb-maven-plugin.version>
     <mdh.maven.version>3.0</mdh.maven.version>
     <mdh.maven-antrun-plugin.version>1.8</mdh.maven-antrun-plugin.version>
     <mdh.maven-assembly-plugin.version>3.1.0</mdh.maven-assembly-plugin.version>
@@ -129,30 +86,19 @@
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.4.0</mdh.maven-war-plugin.version>
-    <!-- This version is tied to spring-boot-test -->
-    <mdh.mockito.version>4.6.1</mdh.mockito.version>
-    <mdh.persistence-api.version>2.2</mdh.persistence-api.version>
-    <!-- This version is tied to cxf -->
-    <mdh.rs-api.version>2.1.1</mdh.rs-api.version>
-    <mdh.servlet-api.version>2.5</mdh.servlet-api.version>
-    <!-- This version is tied to brave, cxf and spring-boot-->
-    <mdh.slf4j.version>1.7.36</mdh.slf4j.version>
+    <mdu.mdu-build-resources.version>34</mdu.mdu-build-resources.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
     <mdh.spotbugs-maven-plugin.version>4.9.8.2</mdh.spotbugs-maven-plugin.version>
-    <mdh.spring.version>5.3.21</mdh.spring.version>
-    <mdh.spring-boot.version>2.7.0</mdh.spring-boot.version>
-    <mdh.spring-cloud.version>3.1.3</mdh.spring-cloud.version>
-    <mdh.springdoc.version>1.6.15</mdh.springdoc.version>
     <mdh.sql-maven-plugin.version>1.5</mdh.sql-maven-plugin.version>
-    <!-- Higher versions require Java 11 -->
-    <mdh.swagger.version>2.2.8</mdh.swagger.version>
     <mdh.tidy-maven-plugin.version>1.1.0</mdh.tidy-maven-plugin.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.validation-api.version>2.0.1.Final</mdh.validation-api.version>
     <mdh.versions-maven-plugin.version>2.21.0</mdh.versions-maven-plugin.version>
-    <mdu.central-publishing-maven-plugin.version>0.10.0</mdu.central-publishing-maven-plugin.version>
-    <mdu.jaxb-maven-plugin.version>4.0.8</mdu.jaxb-maven-plugin.version>
-    <mdu.mdu-build-resources.version>34</mdu.mdu-build-resources.version>
+
+    <!-- MDU-specific properties -->
+    <mdh.logging.email.buffer>10</mdh.logging.email.buffer>
+    <mdh.logging.email.level>off</mdh.logging.email.level>
+    <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
+    <mdh.logging.file.level>debug</mdh.logging.file.level>
+    <mdh.logging.product.level>debug</mdh.logging.product.level>
 
     <!-- Standard Maven properties -->
     <maven.compiler.release>${mdh.java.version}</maven.compiler.release>
@@ -160,280 +106,6 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.scm.id>github</project.scm.id>
   </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
-        <version>${mdh.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>${mdh.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>${mdh.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.dataformat</groupId>
-        <artifactId>jackson-dataformat-xml</artifactId>
-        <version>${mdh.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-jsr310</artifactId>
-        <version>${mdh.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.jaxrs</groupId>
-        <artifactId>jackson-jaxrs-json-provider</artifactId>
-        <version>${mdh.jackson.version}</version>
-      </dependency>
-      <!-- Implementation javax.mail -->
-      <dependency>
-        <groupId>com.sun.mail</groupId>
-        <artifactId>javax.mail</artifactId>
-        <version>${mdh.mail.version}</version>
-      </dependency>
-      <!-- Implementation javax.xml.ws -->
-      <dependency>
-        <groupId>com.sun.xml.ws</groupId>
-        <artifactId>jaxws-rt</artifactId>
-        <version>${mdh.jaxws-impl.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>${mdh.commons-logging.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.swagger.core.v3</groupId>
-        <artifactId>swagger-annotations</artifactId>
-        <version>${mdh.swagger.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.swagger.core.v3</groupId>
-        <artifactId>swagger-models</artifactId>
-        <version>${mdh.swagger.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.zipkin.brave</groupId>
-        <artifactId>brave</artifactId>
-        <version>${mdh.brave.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.zipkin.brave</groupId>
-        <artifactId>brave-context-slf4j</artifactId>
-        <version>${mdh.brave.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.zipkin.brave</groupId>
-        <artifactId>brave-instrumentation-servlet</artifactId>
-        <version>${mdh.brave.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.annotation</groupId>
-        <artifactId>jakarta.annotation-api</artifactId>
-        <version>${mdh.jakarta.annotation-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.jms</groupId>
-        <artifactId>jakarta.jms-api</artifactId>
-        <version>${mdh.jakarta.jms-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.jws</groupId>
-        <artifactId>jakarta.jws-api</artifactId>
-        <version>${mdh.jakarta.jws-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.persistence</groupId>
-        <artifactId>jakarta.persistence-api</artifactId>
-        <version>${mdh.jakarta.persistence-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.servlet</groupId>
-        <artifactId>jakarta.servlet-api</artifactId>
-        <version>${mdh.jakarta.servlet-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.servlet.jsp</groupId>
-        <artifactId>jakarta.servlet.jsp-api</artifactId>
-        <version>${mdh.jakarta.servlet.jsp-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.servlet.jsp.jstl</groupId>
-        <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-        <version>${mdh.jakarta.servlet.jsp.jstl-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.ws.rs</groupId>
-        <artifactId>jakarta.ws.rs-api</artifactId>
-        <version>${mdh.jakarta.ws.rs-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.xml.ws</groupId>
-        <artifactId>jakarta.xml.ws-api</artifactId>
-        <version>${mdh.jakarta.xml.ws-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.activation</groupId>
-        <artifactId>activation</artifactId>
-        <version>${mdh.activation.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.annotation</groupId>
-        <artifactId>javax.annotation-api</artifactId>
-        <version>${mdh.annotation-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.jms</groupId>
-        <artifactId>javax.jms-api</artifactId>
-        <version>${mdh.jms-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.jws</groupId>
-        <artifactId>jsr181-api</artifactId>
-        <version>${mdh.jws-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>javax.mail-api</artifactId>
-        <version>${mdh.mail-api.version}</version>
-      </dependency>
-      <!-- Implementation javax.mail -->
-      <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>mail</artifactId>
-        <version>${mdh.mail.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.persistence</groupId>
-        <artifactId>javax.persistence-api</artifactId>
-        <version>${mdh.persistence-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
-        <version>${mdh.servlet-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.servlet.jsp</groupId>
-        <artifactId>jsp-api</artifactId>
-        <version>${mdh.jsp-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.servlet.jsp.jstl</groupId>
-        <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-        <version>${mdh.jstl-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.validation</groupId>
-        <artifactId>validation-api</artifactId>
-        <version>${mdh.validation-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.ws.rs</groupId>
-        <artifactId>javax.ws.rs-api</artifactId>
-        <version>${mdh.rs-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.xml.bind</groupId>
-        <artifactId>jaxb-api</artifactId>
-        <version>${mdh.jaxb-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.xml.ws</groupId>
-        <artifactId>jaxws-api</artifactId>
-        <version>${mdh.jaxws-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${mdh.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>${mdh.commons-lang3.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-text</artifactId>
-        <version>${mdh.commons-text.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-integration-tracing-brave</artifactId>
-        <version>${mdh.cxf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-rt-frontend-jaxrs</artifactId>
-        <version>${mdh.cxf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-rt-rs-client</artifactId>
-        <version>${mdh.cxf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-rt-transports-http</artifactId>
-        <version>${mdh.cxf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-rt-ws-security</artifactId>
-        <version>${mdh.cxf.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-        <version>${mdh.log4j2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>${mdh.log4j2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-jcl</artifactId>
-        <version>${mdh.log4j2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-jul</artifactId>
-        <version>${mdh.log4j2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-slf4j-impl</artifactId>
-        <version>${mdh.log4j2.version}</version>
-        <scope>runtime</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>${mdh.mockito.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>${mdh.slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springdoc</groupId>
-        <artifactId>springdoc-openapi-ui</artifactId>
-        <version>${mdh.springdoc.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <build>
     <resources>
@@ -469,7 +141,7 @@
         <plugin>
           <groupId>org.apache.cxf</groupId>
           <artifactId>cxf-codegen-plugin</artifactId>
-          <version>${mdh.cxf.version}</version>
+          <version>${mdu.cxf-codegen-plugin.version}</version>
           <dependencies>
             <!-- Generera JSR-303 Bean Validation Annotations -->
             <dependency>
@@ -481,7 +153,7 @@
             <dependency>
               <groupId>org.apache.cxf.xjcplugins</groupId>
               <artifactId>cxf-xjc-ts</artifactId>
-              <version>${mdh.cxf-xjc.version}</version>
+              <version>${mdu.cxf.xjcplugins.version}</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -505,7 +177,7 @@
         <plugin>
           <groupId>org.apache.cxf</groupId>
           <artifactId>cxf-xjc-plugin</artifactId>
-          <version>${mdh.cxf-xjc.version}</version>
+          <version>${mdu.cxf-xjc-plugin.version}</version>
           <dependencies>
             <!-- Generera JSR-303 Bean Validation Annotations -->
             <dependency>
@@ -517,7 +189,7 @@
             <dependency>
               <groupId>org.apache.cxf.xjcplugins</groupId>
               <artifactId>cxf-xjc-ts</artifactId>
-              <version>${mdh.cxf-xjc.version}</version>
+              <version>${mdu.cxf.xjcplugins.version}</version>
             </dependency>
           </dependencies>
           <configuration>
